@@ -1,5 +1,7 @@
 # Automatic Placenta Segmentation in BOLD MRI
-A neural network model for automatic segmentation of the placenta embedded in whole-uterus Blood Oxygen Level Dependent (BOLD) MRI. The model was trained on a diverse dataset containing subjects with singleton and twin pregnancies, a broad range of gestational ages, and pregnancy conditions including healthy controls, fetal growth restriction, and high BMI. This repo contains our trained model and scripts for inference, training, and evaluation. The trained model can predict placental segmentations on individual MRI and time series data. Training and evaluation scripts can be used to train a new model from scratch, or one initialized with our trained weights. This repo is based on the paper **TODO**
+A neural network model for automatic segmentation of the placenta embedded in whole-uterus Blood Oxygen Level Dependent (BOLD) MRI. The model was trained on a diverse dataset containing subjects with singleton and twin pregnancies, a broad range of gestational ages, and pregnancy conditions including healthy controls, fetal growth restriction, and high BMI. This repo contains our trained model and scripts for inference, training, and evaluation. The trained model can predict placental segmentations on individual MRI and time series data. Training and evaluation scripts can be used to train a new model from scratch, or one initialized with our trained weights. 
+
+This repo is based on the paper "Automatic Segmentation of the Placenta in BOLD MRI Time Series" by S. Mazdak Abulnaga, Sean I. Young, Katherine Hobgood, Eileen Pan, Clinton J. Wang, P. Ellen Grant, Esra Abaci Turk, Polina Golland, MICCAI PIPPI 2022 (to appear), [eprint arXiv:2208.02895](https://arxiv.org/abs/2208.02895)
 
 ![alt text](https://github.com/mabulnaga/placenta-segmentation-release/blob/master/teaser_github.png)
 *Predicted segmentations in our test set (red) and ground truth segmentations (yellow).*
@@ -119,3 +121,11 @@ Please contact Mazdak Abulnaga, abulnaga@mit.edu.
 
 ## Citing and Paper
 If you use this method or some parts of the code, please consider citing our paper: 
+```
+@article{abulnaga2022automatic,
+  title={Automatic Segmentation of the Placenta in BOLD MRI Time Series},
+  author={Abulnaga, S Mazdak and Young, Sean I and Hobgood, Katherine and Pan, Eileen and Wang, Clinton J and Grant, P Ellen and Turk, Esra Abaci and Golland, Polina},
+  journal={arXiv preprint arXiv:2208.02895},
+  year={2022}
+}
+```
