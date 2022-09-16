@@ -88,7 +88,7 @@ The script will create train, validation, and test set splits. The script assume
 - --boundary_kernel: average pooling kernel size used in estimating the placenta boundary
 - --inner_boundary_weight: multiplicative weight for the voxels inside the placenta boundary (Eq. 1 in paper)
 - --outer_boundary_weight: multiplicative weight for the voxels outside the placenta boundary (Eq. 1 in paper)
-- --randomize_image_loader: flag to randomly subsample one of N_l images per subject during training. Use if dataset contains more than one labeled example per subject.
+- --randomize_image_dataloader: flag to randomly subsample one of N_l images per subject during training. Use if dataset contains more than one labeled example per subject.
 - --aug_severity: augmentation severity 
 - --use_Dice_loss: flag to use additive Dice loss. See [here](https://docs.monai.io/en/stable/losses.html#diceloss) for details.
 - --dice_loss_weight: multiplicative scaling parameter for the Dice loss
@@ -100,7 +100,7 @@ The script will create train, validation, and test set splits. The script assume
 #### Running 
 To train as in the paper
 
-``` python train_placenta.py --data_path 'PATH_TO_DATA' --save_path 'PATH_TO_OUTPUT' --epochs 4000 --lr 1e-4 --transform 'affine,flip,intensity,noise,gamma,elastic' --use_weighted_bce --batch_size 4 --boundary_kernel 11 --inner_boundary_weight 1 --outer_boundary_weight 40 --randomize_image_loader --aug_severity 1```
+``` python train_placenta.py --data_path 'PATH_TO_DATA' --save_path 'PATH_TO_OUTPUT' --epochs 4000 --lr 1e-4 --transform 'affine,flip,intensity,noise,gamma,elastic' --use_weighted_bce --batch_size 4 --boundary_kernel 11 --inner_boundary_weight 1 --outer_boundary_weight 40 --randomize_image_dataloader --aug_severity 1```
 
 ## Evaluating the Trained Model
 The script ``run_model.py`` is used to evaluate model performance by computing the Dice score, the Hausdorff distance (HD), HD95, and the mean BOLD difference between predicted segmentations and ground truth. The script requires ground truth segmentation labels for each subject, and can be used on any set of model weights. This script can be run post-training to compute stats for the train, validation, and test sets, or to compute stats on your entire dataset using our trained model.
