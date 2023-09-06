@@ -45,7 +45,7 @@ data_path/
  
   For evaluating on BOLD time series without ground truth segmentations, you do not need to create the ``segmentation`` subdirectory.
  
- The data is padded to be divisible by 16 to pass through the UNet. If your dataset has images with different sizes, you can use the function ``preprocess.preprocess`` to make them all the same shape. Otherwise, you can only use a batch size of 1.
+ The data is padded to be divisible by 16 to pass through the UNet. If your dataset has images with different sizes, you can use the function ``preprocess.preprocess`` to make them all the same shape. Otherwise, you can only use a batch size of 1. Images are also preprocessed according to the paper. 
  
  :warning: The script uses numerical ordering 
  of the file names to associate image and segmentation pairs. Ensure the image and segmentation names have the same ordering, or are the same. :warning:
