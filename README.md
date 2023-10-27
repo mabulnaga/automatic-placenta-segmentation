@@ -3,7 +3,7 @@ A neural network model for automatic segmentation of the placenta embedded in wh
 
 This repo is based on the paper "Automatic Segmentation of the Placenta in BOLD MRI Time Series" by S. Mazdak Abulnaga, Sean I. Young, Katherine Hobgood, Eileen Pan, Clinton J. Wang, P. Ellen Grant, Esra Abaci Turk, Polina Golland, [MICCAI PIPPI 2022](https://link.springer.com/chapter/10.1007/978-3-031-17117-8_1). An open access version of the paper can be found on arXiv,[eprint arXiv:2208.02895](https://arxiv.org/abs/2208.02895).
 
-![alt text]([https://github.com/mabulnaga/placenta-segmentation-release/blob/master/teaser_github.png](https://github.com/mabulnaga/automatic-placenta-segmentation/blob/main/teaser_github.png)
+![Sample results on 4 subjects](https://github.com/mabulnaga/automatic-placenta-segmentation/blob/master/teaser_github.png)
 *Predicted segmentations in our test set (red) and ground truth segmentations (yellow).*
 
 ## Requirements
