@@ -132,6 +132,6 @@ To run on our trained model and evaluate on all data in your dataset,
 
 
 ## Development
-Please contact Mazdak Abulnaga, abulnaga@mit.edu.
+Please contact Mazdak Abulnaga, abulnaga@mit.edu, or raise an issue in this repo.
 
 
