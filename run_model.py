@@ -192,7 +192,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='evaluate trained unet model')
     parser.add_argument('--save_path', dest='save_path', default='~/Documents/model-output/test001', 
         help='full path to location where experiment outputs will go')
-    parser.add_argument('--model_name', dest='model_name', default='model_PIPPI')
+    parser.add_argument('--model_name', dest='model_name', default='model_BWXE')
     parser.add_argument('--data_path', dest='data_path', 
         default='~/Documents/data/')
     parser.add_argument('--eval_existing_folds', action='store_true')

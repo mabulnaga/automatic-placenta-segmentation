@@ -377,7 +377,7 @@ if __name__ == "__main__":
     load_model_checkpt = args.load_model
     # get full path for the pre-loaded model
     if load_model_checkpt:
-        args.preloaded_model_path = os.path.join(os.getcwd(),'model','model_PIPPI.pt')
+        args.preloaded_model_path = os.path.join(os.getcwd(),'model','model_BWXE.pt')
     # random seeds
     np.random.seed(0)
     torch.manual_seed(0)

@@ -10,7 +10,7 @@ from data_loader import DataLoader as DataLoaderInference
 import postprocess
 import metrics
 
-MODEL_NAME = 'model_PIPPI.pt'
+MODEL_NAME = 'model_BWXE.pt'
 IMG_DIR_NAME = 'image'
 LABEL_DIR_NAME = 'image'
 PAD_FACTOR = 16 #factor to make images divisible by.

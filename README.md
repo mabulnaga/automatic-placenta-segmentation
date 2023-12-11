@@ -128,7 +128,7 @@ To run after training a new model,
 
 To run on our trained model and evaluate on all data in your dataset,
 
-``` python run_model.py --data_path 'PATH_TO_DATA --save_path 'PATH_TO_OUTPUT' --model_name 'model_PIPPI' ```
+``` python run_model.py --data_path 'PATH_TO_DATA --save_path 'PATH_TO_OUTPUT' --model_name 'model_BWXE' ```
 
 
 
