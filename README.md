@@ -1,7 +1,7 @@
 # Automatic Placenta Segmentation in BOLD MRI
 A neural network model for automatic segmentation of the placenta embedded in whole-uterus Blood Oxygen Level Dependent (BOLD) MRI. The model was trained on a diverse dataset containing subjects with singleton and twin pregnancies, a broad range of gestational ages, and pregnancy conditions including healthy controls, fetal growth restriction, and high BMI. This repo contains our trained model and scripts for inference, training, and evaluation. The trained model can predict placental segmentations on individual MRI and time series data. Training and evaluation scripts can be used to train a new model from scratch, or one initialized with our trained weights. 
 
-This repo is based on the paper "Automatic Segmentation of the Placenta in BOLD MRI Time Series" by S. Mazdak Abulnaga, Sean I. Young, Katherine Hobgood, Eileen Pan, Clinton J. Wang, P. Ellen Grant, Esra Abaci Turk, Polina Golland, [MICCAI PIPPI 2022](https://link.springer.com/chapter/10.1007/978-3-031-17117-8_1). An open access version of the paper can be found on arXiv, [eprint arXiv:2208.02895](https://arxiv.org/abs/2208.02895).
+This repo is based on the paper "Automatic Segmentation of the Placenta in BOLD MRI Time Series" by S. Mazdak Abulnaga, Neel Dey, Sean I. Young, Katherine Hobgood, Eileen Pan, Clinton J. Wang, P. Ellen Grant, Esra Abaci Turk, Polina Golland, [MELBA 2023](https://www.melba-journal.org/papers/2023:017.html). An open access version of the paper can be found on arXiv, [eprint arXiv:2312.05148](https://arxiv.org/abs/2312.05148).
 
 ![Sample results on 4 subjects](https://github.com/mabulnaga/automatic-placenta-segmentation/blob/main/teaser_github.png)
 *Predicted segmentations in our test set (red) and ground truth segmentations (yellow).*
@@ -9,16 +9,17 @@ This repo is based on the paper "Automatic Segmentation of the Placenta in BOLD 
 ## Citation
 If you find our paper or code useful, please consider citing our paper: 
 ```
-@InProceedings{abulnaga2022placenta,
-author="Abulnaga, S. Mazdak and Young, Sean I. and Hobgood, Katherine and Pan, Eileen and Wang, Clinton J. and Grant, P. Ellen and Abaci Turk, Esra and Golland, Polina",
-title="Automatic Segmentation of the Placenta in BOLD MRI Time Series",
-booktitle="Perinatal, Preterm and Paediatric Image Analysis",
-year="2022",
-publisher="Springer Nature Switzerland",
-address="Cham",
-pages="1--12"
+@article{abulnaga2023placenta,
+    title = "Shape-aware Segmentation of the Placenta in BOLD Fetal MRI Time Series",
+    author = "Abulnaga, S. Mazdak and Dey, Neel and Young, Sean I. and Pan, Eileen and Hobgood, Katherine I. and Wang, Clinton J. and Grant, P. Ellen and Abaci Turk, Esra and Golland, Polina",
+    journal = "Machine Learning for Biomedical Imaging",
+    volume = "2",
+    issue = "PIPPI 2022 special issue",
+    year = "2023",
+    pages = "527--546",
+    issn = "2766-905X",
+    doi = "https://doi.org/10.59275/j.melba.2023-g3f8",
 }
-
 ```
 
 ## Requirements
